@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE facelet-taglib PUBLIC
+  "-//Sun Microsystems, Inc.//DTD Facelet Taglib 1.0//EN"
+  "http://java.sun.com/dtd/facelet-taglib_1_0.dtd">
+<facelet-taglib>
+	<namespace>http://cmpa.org/core</namespace>
+	<tag>
+        <description><![CDATA[
+            Load a resource bundle localized for the Locale of the current
+            view, and expose it as a java.util.Map in the request attributes
+            of the current request under the key specified by the value of the
+            "var" attribute of this tag. The Map must behave such that if a
+            get() call is made for a key that does not exist in the Map, the
+            literal string ???KEY??? is returned from the Map, where KEY is
+            the key being looked up in the Map, instead of a
+            MissingResourceException being thrown. If the ResourceBundle does
+            not exist, a JspException must be thrown.
+        ]]></description>
+        <tag-name>loadBundle</tag-name>
+        <handler-class>org.cmpa.web.LoadBundleHandler</handler-class>
+        <attribute>
+            <description><![CDATA[
+                Base name of the resource bundle
+                to be loaded.
+            ]]></description>
+            <name>basename</name>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <description><![CDATA[
+                Name of a request scope attribute under which
+                the resource bundle will be exposed as a Map.
+            ]]></description>
+            <name>var</name>
+            <required>true</required>
+            <type>java.lang.String</type>
+        </attribute>
+    </tag>
+</facelet-taglib>
