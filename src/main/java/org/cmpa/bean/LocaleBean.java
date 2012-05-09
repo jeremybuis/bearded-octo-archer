@@ -9,9 +9,6 @@ import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
 
-/**
- * Site locale backing bean.
- */
 @ManagedBean(name="localeBean")
 @SessionScoped
 public class LocaleBean implements Serializable {

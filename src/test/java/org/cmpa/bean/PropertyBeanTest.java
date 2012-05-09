@@ -3,7 +3,6 @@ package org.cmpa.bean;
 import java.util.Locale;
 import javax.faces.component.UIViewRoot;
 import javax.faces.context.FacesContext;
-import org.cmpa.web.ResourceBundleMap;
 import org.easymock.EasyMock;
 import static org.junit.Assert.assertEquals;
 import org.junit.Before;
@@ -12,6 +11,8 @@ import org.junit.runner.RunWith;
 import org.powermock.api.easymock.PowerMock;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
+
+import org.cmpa.web.ResourceBundleMap;
 
 @RunWith(PowerMockRunner.class)
 @PrepareForTest(
