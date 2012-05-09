@@ -60,11 +60,13 @@ public class ResourceBundleMap
 
 	public ResourceBundleMap(String path, Locale locale)
 	{
-		String langExtension = ".properties";
-		if ( Locale.FRENCH.equals(locale) )
-		{
-			langExtension = "_fr.properties";
-		}
+		// String langExtension = ".properties";
+		// if ( Locale.FRENCH.equals(locale) )
+		// {
+		// 	langExtension = "_fr.properties";
+		// }
+		String langExtension = (Locale.FRENCH.equals(locale)) ? "_fr.properties" : ".properties";
+
 		basename = path;
 		this.filePath = path.replace(".", "/").concat(langExtension);
 
