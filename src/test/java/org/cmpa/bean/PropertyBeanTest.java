@@ -32,7 +32,7 @@ public class PropertyBeanTest
 
 		
 		faces = PowerMock.createMock(FacesContext.class);
-		EasyMock.expect(FacesContext.getCurrentInstance()).andReturn(faces);
+		EasyMock.expect(FacesContext.getCurrentInstance()).andReturn(faces).anyTimes();
 		root = EasyMock.createMock(UIViewRoot.class);
 		EasyMock.expect(faces.getViewRoot()).andReturn(root).anyTimes();
 		EasyMock.expect(root.getLocale()).andReturn(Locale.ENGLISH).anyTimes();
