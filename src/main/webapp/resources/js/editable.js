@@ -1,5 +1,5 @@
-var cmpa = window.cmpa || {};
-cmpa.ela = cmpa.ela || {};
+var buis = window.buis || {};
+buis.ela = buis.ela || {};
 
 if (undefined === typeof Aloha) {
 	Aloha.ready(function() {

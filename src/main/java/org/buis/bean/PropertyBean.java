@@ -1,11 +1,11 @@
-package org.cmpa.bean;
+package org.buis.bean;
 
 import java.io.Serializable;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 import javax.faces.context.FacesContext;
 
-import org.cmpa.web.ResourceBundleMap;
+import org.buis.web.ResourceBundleMap;
 
 @ManagedBean(name = "propertyBean")
 @RequestScoped

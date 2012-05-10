@@ -1,4 +1,4 @@
-package org.cmpa.web;
+package org.buis.web;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -60,11 +60,6 @@ public class ResourceBundleMap
 
 	public ResourceBundleMap(String path, Locale locale)
 	{
-		// String langExtension = ".properties";
-		// if ( Locale.FRENCH.equals(locale) )
-		// {
-		// 	langExtension = "_fr.properties";
-		// }
 		String langExtension = (Locale.FRENCH.equals(locale)) ? "_fr.properties" : ".properties";
 
 		basename = path;

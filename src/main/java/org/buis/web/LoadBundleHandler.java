@@ -1,4 +1,4 @@
-package org.cmpa.web;
+package org.buis.web;
 
 import com.sun.faces.facelets.tag.TagHandlerImpl;
 import java.io.IOException;
@@ -10,7 +10,7 @@ import javax.faces.view.facelets.FaceletContext;
 import javax.faces.view.facelets.TagAttribute;
 import javax.faces.view.facelets.TagConfig;
 
-import org.cmpa.web.ResourceBundleMap;
+import org.buis.web.ResourceBundleMap;
 
 public final class LoadBundleHandler
 		extends TagHandlerImpl

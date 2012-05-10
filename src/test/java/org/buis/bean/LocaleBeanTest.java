@@ -1,4 +1,4 @@
-package org.cmpa.bean;
+package org.buis.bean;
 
 import java.util.Locale;
 import javax.faces.component.UIViewRoot;
@@ -10,7 +10,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
 
-import org.cmpa.bean.LocaleBean;
+import org.buis.bean.LocaleBean;
 
 public class LocaleBeanTest
 {

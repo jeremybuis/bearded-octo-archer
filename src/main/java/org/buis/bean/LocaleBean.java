@@ -1,4 +1,4 @@
-package org.cmpa.bean;
+package org.buis.bean;
 
 import java.io.Serializable;
 import java.util.Locale;

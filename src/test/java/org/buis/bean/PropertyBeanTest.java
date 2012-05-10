@@ -1,4 +1,4 @@
-package org.cmpa.bean;
+package org.buis.bean;
 
 import java.util.Locale;
 import javax.faces.component.UIViewRoot;
@@ -12,7 +12,7 @@ import org.powermock.api.easymock.PowerMock;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 
-import org.cmpa.web.ResourceBundleMap;
+import org.buis.web.ResourceBundleMap;
 
 @RunWith(PowerMockRunner.class)
 @PrepareForTest(

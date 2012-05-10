@@ -7,7 +7,7 @@
     </context-param>
     <context-param>
         <param-name>facelets.LIBRARIES</param-name>
-        <param-value>/WEB-INF/cmpa_core.taglib.xml</param-value>
+        <param-value>/WEB-INF/buis_core.taglib.xml</param-value>
     </context-param>
 
     <servlet>
