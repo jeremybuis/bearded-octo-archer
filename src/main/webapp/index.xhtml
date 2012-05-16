@@ -10,7 +10,7 @@
 	<f:view locale="#{localeBean.language}" encoding="UTF-8" contentType="text/html">
 		
 		<!-- This bundle def needs to be inside the view to take advantage of the locale being set in the view -->
-		<buis:loadBundle basename="pages.index.index" var="pgmsgs" />
+		<buis:loadBundle basename="#{pages.index.index}" var="pgmsgs" />
 
 		<h:head>			
 			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -39,7 +39,7 @@
 				
 				<!-- <div id="#{propertyBean.convertPropertyToId(cc.attrs.property)}" class="editable"> -->
 				<div class="editable">
-					<!-- <h:outputText value="#{pgmsgs['text1']}" /> -->
+					<h:outputText value="#{pgmsgs['text1']}" />
 				</div>
 
 				<h:panelGroup >
