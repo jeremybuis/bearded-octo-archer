@@ -67,6 +67,9 @@ public class PropertyBean
 
 	public void save()
 	{
+
+		System.out.println("we get to save our content");
+
 		FacesContext faces = FacesContext.getCurrentInstance();
 		ResourceBundleMap currentBundle = new ResourceBundleMap(bundle, faces.getViewRoot().getLocale());
 		currentBundle.put(property.replace("-", "."), content);

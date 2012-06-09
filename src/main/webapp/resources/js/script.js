@@ -53,6 +53,9 @@ Aloha.ready(function() {
 		$(formSelector + " :eq(1)").val(contentId);
 		$(formSelector + " :eq(2)").val(content);
 		//$(formSelector + " :eq(4)").click();
+
+		console.log($(formSelector).serialize());
+
 		$.post(window.location.href, $(formSelector).serialize());
 	});
 });
