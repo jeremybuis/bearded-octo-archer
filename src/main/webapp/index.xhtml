@@ -9,7 +9,7 @@
 	<f:view locale="#{localeBean.language}" encoding="UTF-8" contentType="text/html">
 
 		<!-- This bundle def needs to be inside the view to take advantage of the locale being set in the view -->
-		<buis:loadBundle basename="test" var="pgmsgs" />
+		<buis:loadBundle basename="pages.index.index" var="pgmsgs" />
 
 		<!-- #{pgmsgs} -->
 
@@ -40,13 +40,13 @@
 
 			<h:panelGroup>
 				
-				<div id="test-id" class="editable">
+				<div id="#{propertyBean.convertPropertyToId('pages.index.index')}-id" class="editable">
 					<h:outputText value="#{pgmsgs['sample']}" />
 				</div>
 
 				<h:panelGroup >
 
-					<h:form styleClass="form-test">
+					<h:form styleClass="form-#{propertyBean.convertPropertyToId('pages.index.index')}">
 						<h:inputHidden value="#{propertyBean.property}"/>
 						<h:inputHidden value="#{propertyBean.content}"/>
 						<h:inputHidden value="#{propertyBean.bundle}"/>
