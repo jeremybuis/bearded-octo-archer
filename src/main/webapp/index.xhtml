@@ -28,8 +28,7 @@
 
  			<link href="http://aloha-editor.org/aloha-0.20/css/aloha.css" type="text/css" rel="stylesheet" />
 
-			<h:outputScript library="js/lib" name="aloha.js" />
-			<h:outputScript library="js" name="aloha-config.js" />
+			<script src="#{resource['js/lib/aloha.js']}" data-aloha-plugins="common/format"></script>
 
 		</h:head>
 
@@ -40,16 +39,14 @@
 			<br /><br />
 
 			<h:panelGroup>
-
-				<h:outputScript library="js" name="editable.js"/>
 				
-				<div id="#{propertyBean.convertPropertyToId(pgmsgs.attrs.property)}" class="editable">
+				<div id="test-id" class="editable">
 					<h:outputText value="#{pgmsgs['sample']}" />
 				</div>
 
 				<h:panelGroup >
 
-					<h:form styleClass="form-#{propertyBean.convertPropertyToId(pgmsgs.attrs.property)}">
+					<h:form styleClass="form-test">
 						<h:inputHidden value="#{propertyBean.property}"/>
 						<h:inputHidden value="#{propertyBean.content}"/>
 						<h:inputHidden value="#{propertyBean.bundle}"/>
@@ -58,6 +55,8 @@
 				</h:panelGroup>
 			</h:panelGroup>
 		
+			<h:outputScript library="js" name="script.js"/>
+
 		</h:body>
 	</f:view>
 </html>

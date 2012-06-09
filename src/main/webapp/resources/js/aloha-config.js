@@ -5,7 +5,6 @@
 	}
 	window.Aloha.settings = {
 		bundles : {
-			plugins:"http://aloha-editor.org/aloha-0.20/plugins/",
 			common:"http://aloha-editor.org/aloha-0.20/plugins/common/"
 		},
 		logLevels: {'error': true, 'warn': true, 'info': true, 'debug': false},
