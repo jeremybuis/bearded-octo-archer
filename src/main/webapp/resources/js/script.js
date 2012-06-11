@@ -18,8 +18,6 @@ if (window.Aloha !== undefined && window.Aloha !== null) {
 			}
 
 			var formSelector = '.form-' + contentId;
-
-			console.log(formSelector);
 			
 			//set our hidden inputs
 			$(formSelector + " :eq(1)").val(contentId);
