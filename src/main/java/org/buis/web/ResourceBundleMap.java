@@ -185,7 +185,6 @@ public class ResourceBundleMap
 	
 	//writes to the properties file
 	public void save(){
-		
 		try {
 
 			URL url = Thread.currentThread().getContextClassLoader().getResource(this.filePath);
